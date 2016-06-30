@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="harry.pa.cafealicia.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:padding="@dimen/activity_horizontal_margin">
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/button_ventas"
+           android:id="@+id/btnVentas"
+
+
+           />
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/button_facturas"
+           android:id="@+id/btnFacturas"
+
+           android:layout_below="@id/btnVentas"
+           />
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/button_creditos"
+           android:id="@+id/btnCreditos"
+
+           android:layout_below="@id/btnFacturas"
+           />
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/button_productos"
+           android:id="@+id/btnProductos"
+
+           android:layout_below="@id/btnCreditos"
+           />
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/button_proveedores"
+           android:id="@+id/Proveedores"
+
+           android:layout_below="@id/btnProductos"
+           />
+   </RelativeLayout>
+
+
+</android.support.v4.widget.NestedScrollView>
