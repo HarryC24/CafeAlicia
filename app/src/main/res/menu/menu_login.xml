@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/ tools"
+    tools:context=".LoginActivity">
+    <item android:id="@+id/action_change_ip"
+        android:title="@string/setting_config_ip_title"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="10"
+        app:showAsAction="ifRoom|withText"/>/>
+
+</menu>

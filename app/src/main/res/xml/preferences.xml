@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferencias_principal" >
+
+    <EditTextPreference
+        android:key="@string/setting_config_ip_key"
+        android:title="@string/setting_config_ip_title"
+        android:summary="@string/setting_config_ip_summary"
+        android:defaultValue="192.168.1.149"/>
+
+</PreferenceScreen>

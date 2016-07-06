@@ -7,4 +7,9 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+    <item android:title="@string/menu_action_logout"
+        android:id="@+id/menu_salir"
+        android:icon="@android:drawable/ic_lock_power_off"
+        android:orderInCategory="115"
+        app:showAsAction="collapseActionView"/>
 </menu>
