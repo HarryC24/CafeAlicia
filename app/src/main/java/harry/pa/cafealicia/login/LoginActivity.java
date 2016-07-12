@@ -295,7 +295,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
                         Connection connection = new Connection(parametros);
 
-                        respuesta = connection.respuesta();
+                        respuesta = connection.peticion();
 
                     } catch (Exception e) {
 
@@ -370,6 +370,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         private void navigateToMainScreen() {
             SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(LoginActivity.this);
             SharedPreferences.Editor edit = sp.edit();
+            edit.putString("user_email", mEmail);
             edit.putString("user_nivel", remoteNivel);
             edit.putString("user_pass", remotePassword);
             edit.commit();

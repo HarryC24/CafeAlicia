@@ -31,6 +31,10 @@
     <string name="menu_action_logout">Cerrar sesión</string>
     <string name="title_activity_ventas">Inicio</string>
     <string name="title_informe_ventas">Informe de ventas</string>
-    <string name="text_hourpicker">%1$s:%2$s</string>
-    <string name="text_datepicker">%1$s-%2$s-%3$s</string>
+    <string name="dialog_informe_ok">Informe enviado correctamente</string>
+    <string name="dialog_informe_error">No se pudo enviar el informe</string>
+
+    <string name="uri_post_informe">http://cafealicia.sytes.net/CafeAlicia/Services/upload_informe.php</string>
+    <string name="uri_request">http://cafealicia.sytes.net/CafeAlicia/Services/services.php?</string>
+
 </resources>
