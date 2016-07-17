@@ -33,8 +33,13 @@
     <string name="title_informe_ventas">Informe de ventas</string>
     <string name="dialog_informe_ok">Informe enviado correctamente</string>
     <string name="dialog_informe_error">No se pudo enviar el informe</string>
+    <string name="title_activity_dialog">Seleccione</string>
 
-    <string name="uri_post_informe">http://cafealicia.sytes.net/CafeAlicia/Services/upload_informe.php</string>
-    <string name="uri_request">http://cafealicia.sytes.net/CafeAlicia/Services/services.php?</string>
+    <string name="title_dialog_ventas">Que desea hacer ?</string>
+    <string name="button_dilog_ventas_crear">Crear informe de venta</string>
+    <string name="button_dilog_ventas_ver">Ver informes de venta</string>
+    <string name="title_VentasActivityList">Informes de ventas</string>
+    <string name="connection_key">petv8cp9</string>
+
 
 </resources>

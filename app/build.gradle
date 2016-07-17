@@ -25,5 +25,5 @@ dependencies {
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.android.support:design:24.0.0'
     compile "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
-
+    compile 'com.android.support:recyclerview-v7:24.0.0'
 }

@@ -47,6 +47,7 @@ import java.util.Map;
 import harry.pa.cafealicia.MainActivity;
 import harry.pa.cafealicia.R;
 import harry.pa.cafealicia.connection.Connection;
+import harry.pa.cafealicia.util.util;
 
 
 /**
@@ -286,13 +287,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
                 try {
 
-
                     String respuesta = null;
                     try {
                         Map<String,String> parametros = new HashMap<>();
 
                         parametros.put("email",mEmail);
-
+                        parametros.put("key",getResources().getString(R.string.connection_key));
                         Connection connection = new Connection(parametros);
 
                         respuesta = connection.peticion();
@@ -302,18 +302,15 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                     }
 
                     if (respuesta.equals("-1")) {
-                        Snackbar.make(mLoginFormView, getString(R.string.error_connection_timeout), Snackbar.LENGTH_LONG)
-                                .setAction("Action", null).show();
+                        util.makeSnackBar(mLoginFormView,getString(R.string.error_connection_timeout),0);
                         error_code=1;
                         return false;
                     }
                     if (respuesta.equals("0") || respuesta.length() == 0 ) {
-                        Snackbar.make(mLoginFormView, getString(R.string.error_incorrect_user), Snackbar.LENGTH_LONG)
-                                .setAction("Action", null).show();
+                        util.makeSnackBar(mLoginFormView,getString(R.string.error_connection_timeout),0);
                         error_code=2;
                         return false;
                     }
-
 
                     JSONArray jsonarray = new JSONArray(respuesta);
                     for (int i = 0; i < jsonarray.length(); i++) {
@@ -358,8 +355,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
                         mPasswordView.requestFocus();
                         break;
                     case 3:
-                        Snackbar.make(mLoginFormView, getString(R.string.error_connection_error), Snackbar.LENGTH_LONG)
-                                .setAction("Action", null).show();
+                        util.makeSnackBar(mLoginFormView,getString(R.string.error_connection_error),0);
                         mPasswordView.requestFocus();
                         break;
                 }

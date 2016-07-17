@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.READ_PROFILE" />
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -34,6 +34,23 @@
             android:label="@string/title_activity_ventas"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="harry.pa.cafealicia.MainActivity" />
+        </activity>
+        <activity
+            android:name=".DialogActivity"
+            android:label="@string/title_activity_dialog"
+            android:parentActivityName=".MainActivity"
+            android:theme="@android:style/Theme.Dialog">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="harry.pa.cafealicia.MainActivity" />
+        </activity>
+        <activity   android:name=".ventas.list.VentasActivityList"
+                    android:label="@string/title_VentasActivityList"
+                    android:parentActivityName=".MainActivity"
+                    >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="harry.pa.cafealicia.MainActivity" />

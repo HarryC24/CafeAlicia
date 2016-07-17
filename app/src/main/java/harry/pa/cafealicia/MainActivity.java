@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.btnVentas)
     public void handleBtnVentas()
     {
-        Intent intent = new Intent(this, VentasActivity.class);
+        Intent intent = new Intent(this, DialogActivity.class);
         startActivity(intent);
 
     }
